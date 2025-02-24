@@ -1,37 +1,58 @@
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { FiMenu, FiX } from "react-icons/fi";
 import logo from "/src/assets/logo.jpg";
 
-const Navbar = () => (
-  <nav className="fixed top-0 left-0 w-full bg-gray-900 shadow-lg text-white py-4 px-5 flex items-center justify-between z-50">
-    {/* Logo */}
-    <NavLink to="/">
-      <img src={logo} className="w-36" alt="Brand Logo" />
-    </NavLink>
+const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
 
-    {/* Navigation Links */}
-    <ul className="hidden sm:flex gap-6 text-sm">
-      {["Home", "Products", "About", "Works", "Contact"].map((name, i) => (
-        <NavLink
-          key={i}
-          to={`/${name.toLowerCase()}`}
-          className={({ isActive }) =>
-            `hover:text-gray-300 transition-all ${
-              isActive ? "text-blue-400 font-bold" : "text-white"
-            }`
-          }
-        >
-          {name}
-        </NavLink>
-      ))}
+  // Detect scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Activate effect when scrolled 50px
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-      {/* Shop Now Button (Scrolls to Hero Section) */}
-      <a href="#shop-now">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all">
-          Shop Now
-        </button>
-      </a>
-    </ul>
-  </nav>
-);
+  return (
+    <>
+      {/* Navbar */}
+      <nav
+        className={`fixed top-0 left-0 w-full py-4 px-5 z-50 transition-all duration-300 
+          ${isScrolled ? "bg-gray-900/60 backdrop-blur-md shadow-md" : "bg-gray-900"}`}
+      >
+        <div className="container mx-auto flex items-center justify-between">
+          {/* Logo */}
+          <a href="#" className="flex items-center">
+            <img src={logo} className="w-36" alt="Brand Logo" />
+          </a>
+
+          {/* Desktop Navigation */}
+          <div className="hidden sm:flex items-center space-x-6">
+            <ul className="flex gap-6 text-lg font-medium">
+              {["Home", "Products", "About", "Works", "Contact", "Shop Now"].map((name, i) => (
+                <a
+                href={`#${name.toLowerCase().replace(" ", "-")}`}
+                className="hover:text-gray-300 transition-all text-[#F5DEB3]"
+              >
+                {name}
+              </a>
+              ))}
+            </ul>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button className="sm:hidden text-2xl text-[#F5DEB3]">
+            <FiMenu />
+          </button>
+        </div>
+      </nav>
+
+      {/* Extra margin to prevent overlap with Hero Section */}
+      <div className="mt-24"></div>
+    </>
+  );
+};
 
 export default Navbar;

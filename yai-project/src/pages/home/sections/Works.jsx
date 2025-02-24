@@ -6,10 +6,10 @@ import image9 from "../../../assets/image9.JPG";
 
 const Works = () => {
   return (
-    <section id="works" className="py-20 bg-white">
+    <section id="works" className="py-20 bg-gray-900 text-[#F5DEB3]">
       <div className="container mx-auto px-4">
         
-        <h2 className="text-4xl font-bold text-center mb-16">Our Process</h2>
+        <h2 className="text-5xl font-bold text-center mb-12 pb-8">Works</h2>
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -21,13 +21,8 @@ const Works = () => {
               alt="Collection Process"
               className="w-full h-52 object-cover rounded-lg mb-4"
             />
-            <div className="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-              1
-            </div>
-            <h3 className="font-semibold mb-2">Collection</h3>
-            <p className="text-gray-600">
-              Gathering waste leather from local factories
-            </p>
+            <h3 className="font-semibold mb-2 text-lg">Collection</h3>
+            <p>Gathering waste leather from local factories</p>
           </div>
 
           {/* Step 2 */}
@@ -37,13 +32,8 @@ const Works = () => {
               alt="Sorting Process"
               className="w-full h-52 object-cover rounded-lg mb-4"
             />
-            <div className="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-              2
-            </div>
-            <h3 className="font-semibold mb-2">Sorting</h3>
-            <p className="text-gray-600">
-              Selecting the best materials for upcycling
-            </p>
+            <h3 className="font-semibold mb-2 text-lg">Sorting</h3>
+            <p>Selecting the best materials for upcycling</p>
           </div>
 
           {/* Step 3 */}
@@ -53,13 +43,8 @@ const Works = () => {
               alt="Crafting Process"
               className="w-full h-52 object-cover rounded-lg mb-4"
             />
-            <div className="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-              3
-            </div>
-            <h3 className="font-semibold mb-2">Crafting</h3>
-            <p className="text-gray-600">
-              Handmaking each pair with care
-            </p>
+            <h3 className="font-semibold mb-2 text-lg">Crafting</h3>
+            <p>Handmaking each pair with care</p>
           </div>
 
           {/* Step 4 */}
@@ -69,13 +54,8 @@ const Works = () => {
               alt="Quality Check Process"
               className="w-full h-52 object-cover rounded-lg mb-4"
             />
-            <div className="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-              4
-            </div>
-            <h3 className="font-semibold mb-2">Quality Check</h3>
-            <p className="text-gray-600">
-              Ensuring comfort and durability
-            </p>
+            <h3 className="font-semibold mb-2 text-lg">Quality Check</h3>
+            <p>Ensuring comfort and durability</p>
           </div>
 
         </div>
