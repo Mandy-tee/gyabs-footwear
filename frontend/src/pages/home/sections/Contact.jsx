@@ -28,7 +28,7 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gray-200">
       <div className="container mx-auto px-4 pl-50 pr-30">
 
-        <h2 className="text-5xl font-bold text-center mb-12 pb-8">Get in Touch</h2>
+        <h2 className="text-5xl font-bold text-center mb-12 pb-20">Get in Touch</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 

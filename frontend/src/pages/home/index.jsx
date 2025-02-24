@@ -7,7 +7,7 @@ import Contact from './sections/Contact';
 
 const Home = () => {
     return (
-        <div>
+        <div className='overflow-x-hidden'> 
             <Hero />
             <AboutProduct />
             <AboutInnovator />

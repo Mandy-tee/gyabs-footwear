@@ -6,7 +6,7 @@ const AboutInnovator = () => {
     <section id="about" className="py-20 bg-gray-200">
       <div className="container mx-auto px-4">
         
-        <h2 className="text-5xl font-bold text-center mb-12 pb-8 text-gray-950">
+        <h2 className="text-5xl font-bold text-center mb-12 pb-20 text-gray-950">
           Meet Fredrick Gyabeng, CEO of Gyabs Footwear
         </h2>
 

@@ -9,10 +9,10 @@ const Works = () => {
     <section id="works" className="py-20 bg-gray-900 text-[#F5DEB3]">
       <div className="container mx-auto px-4">
         
-        <h2 className="text-5xl font-bold text-center mb-12 pb-8">Works</h2>
+        <h2 className="text-5xl font-bold text-center mb-12 pb-20">Works</h2>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pl-12">
           
           {/* Step 1 */}
           <div className="text-center">
@@ -21,7 +21,7 @@ const Works = () => {
               alt="Collection Process"
               className="w-full h-52 object-cover rounded-lg mb-4"
             />
-            <h3 className="font-semibold mb-2 text-lg">Collection</h3>
+            <h3 className="font-semibold mb-2 text-lg pt-8">Collection</h3>
             <p>Gathering waste leather from local factories</p>
           </div>
 
@@ -32,7 +32,7 @@ const Works = () => {
               alt="Sorting Process"
               className="w-full h-52 object-cover rounded-lg mb-4"
             />
-            <h3 className="font-semibold mb-2 text-lg">Sorting</h3>
+            <h3 className="font-semibold mb-2 text-lg pt-8">Sorting</h3>
             <p>Selecting the best materials for upcycling</p>
           </div>
 
@@ -43,7 +43,7 @@ const Works = () => {
               alt="Crafting Process"
               className="w-full h-52 object-cover rounded-lg mb-4"
             />
-            <h3 className="font-semibold mb-2 text-lg">Crafting</h3>
+            <h3 className="font-semibold mb-2 text-lg pt-8">Crafting</h3>
             <p>Handmaking each pair with care</p>
           </div>
 
@@ -54,7 +54,7 @@ const Works = () => {
               alt="Quality Check Process"
               className="w-full h-52 object-cover rounded-lg mb-4"
             />
-            <h3 className="font-semibold mb-2 text-lg">Quality Check</h3>
+            <h3 className="font-semibold mb-2 text-lg pt-8">Quality Check</h3>
             <p>Ensuring comfort and durability</p>
           </div>
 

@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <div className="w-full">
-      <section className="relative w-full h-screen">
+      <section className="w-screen h-screen relative overflow-hidden">
 
         {/* Swiper Image Slider */}
         <Swiper
