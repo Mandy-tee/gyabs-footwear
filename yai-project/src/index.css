@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+:root {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-50;
+  }
