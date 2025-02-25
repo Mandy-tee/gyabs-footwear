@@ -5,6 +5,7 @@ import logo from "/src/assets/logo.jpg";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Detect scroll position
   useEffect(() => {
@@ -33,19 +34,37 @@ const Navbar = () => {
             <ul className="flex gap-6 text-lg font-medium">
               {["Home", "Products", "About", "Works", "Contact", "Shop Now"].map((name, i) => (
                 <a
-                href={`#${name.toLowerCase().replace(" ", "-")}`}
-                className="hover:text-gray-300 transition-all text-[#F5DEB3]"
-              >
-                {name}
-              </a>
+                  key={i}
+                  href={`#${i == 0 ? '' : name.toLowerCase().replace(" ", "-")}`}
+                  className="hover:text-gray-300 transition-all text-[#F5DEB3]"
+                >
+                  {name}
+                </a>
               ))}
             </ul>
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="sm:hidden text-2xl text-[#F5DEB3]">
+          <button onClick={() => { setIsMenuOpen(!isMenuOpen) }} className="sm:hidden text-2xl text-[#F5DEB3]">
             <FiMenu />
           </button>
+
+
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className="hidden space-x-6" style={{ display: isMenuOpen ? 'block' : 'none' }}>
+          <ul className="flex flex-col items-end gap-6 text-lg font-medium">
+            {["Home", "Products", "About", "Works", "Contact", "Shop Now"].map((name, i) => (
+              <a
+                key={i}
+                href={`#${i == 0 ? '' : name.toLowerCase().replace(" ", "-")}`}
+                className="hover:text-gray-300 transition-all text-[#F5DEB3]"
+              >
+                {name}
+              </a>
+            ))}
+          </ul>
         </div>
       </nav>
 
