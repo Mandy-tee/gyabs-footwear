@@ -5,45 +5,56 @@ import image3 from "../../../assets/image3.JPG";
 
 const AboutProduct = () => {
   return (
-    <div>
-      <section id="products" className="py-20 bg-gray-900 text-[#F5DEB3]">
-        <div className="container mx-auto px-4">
-          <h2 className="text-5xl font-bold text-center mb-12 pb-20">About Products</h2>
+    <section id="products" className="py-16 bg-gray-900 text-[#F5DEB3]">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+        
+        <h2 className="text-6xl md:text-4xl font-bold text-center mb-10 pb-20">About Products</h2>
 
-          {/* Product Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center pl-16">
-            
-            {/* Product 1 */}
-            <div>
-              <img src={image1} alt="Eco-Friendly Materials" className="w-full h-64 object-cover rounded-lg shadow-lg" />
-              <h3 className="text-xl font-semibold mt-4 pt-8">Eco-Friendly Materials</h3>
-              <p className="text-[#F5DEB3] mt-2">
-                Crafted from waste materials that would otherwise go to waste, each pair tells a story of sustainability.
-              </p>
-            </div>
-
-            {/* Product 2 */}
-            <div>
-              <img src={image2} alt="Sustainable Design" className="w-full h-64 object-cover rounded-lg shadow-lg" />
-              <h3 className="text-xl font-semibold mt-4 pt-8">Sustainable Design</h3>
-              <p className="text-[#F5DEB3] mt-2">
-                Thoughtfully designed for both comfort and durability, reducing our environmental footprint.
-              </p>
-            </div>
-
-            {/* Product 3 */}
-            <div>
-              <img src={image3} alt="Local Craftsmanship" className="w-full h-64 object-cover rounded-lg shadow-lg" />
-              <h3 className="text-xl font-semibold mt-4 pt-8">Local Craftsmanship</h3>
-              <p className="text-[#F5DEB3] mt-2">
-                Each pair is handcrafted locally, supporting our community while delivering quality footwear for school children, PWDS, etc.
-              </p>
-            </div>
-
+        {/* Responsive Product Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+          
+          {/* Product 1 */}
+          <div className="p-4">
+            <img 
+              src={image1} 
+              alt="Eco-Friendly Materials" 
+              className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-lg"
+            />
+            <h3 className="text-lg sm:text-xl font-semibold mt-4 pt-4">Eco-Friendly Materials</h3>
+            <p className="text-sm sm:text-base mt-2">
+              Crafted from waste materials that would otherwise go to waste, each pair tells a story of sustainability.
+            </p>
           </div>
+
+          {/* Product 2 */}
+          <div className="p-4">
+            <img 
+              src={image2} 
+              alt="Sustainable Design" 
+              className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-lg"
+            />
+            <h3 className="text-lg sm:text-xl font-semibold mt-4 pt-4">Sustainable Design</h3>
+            <p className="text-sm sm:text-base mt-2">
+              Thoughtfully designed for both comfort and durability, reducing our environmental footprint.
+            </p>
+          </div>
+
+          {/* Product 3 */}
+          <div className="p-4">
+            <img 
+              src={image3} 
+              alt="Local Craftsmanship" 
+              className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-lg"
+            />
+            <h3 className="text-lg sm:text-xl font-semibold mt-4 pt-4">Local Craftsmanship</h3>
+            <p className="text-sm sm:text-base mt-2">
+              Each pair is handcrafted locally, supporting our community while delivering quality footwear for school children, PWDS, etc.
+            </p>
+          </div>
+
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

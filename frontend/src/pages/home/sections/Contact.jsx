@@ -35,24 +35,24 @@ const Contact = () => {
     <section id="contact" className="py-12 bg-gray-100">
       <div className="container mx-auto px-6 md:px-12 lg:px-16">
 
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Get in Touch</h2>
+        <h2 className="text-6xl md:text-4xl font-bold text-center mb-10 pb-20">Get in Touch</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
           {/* Contact Info */}
-          <div className="space-y-6 text-center md:text-left">
+          <div className="space-y-6 text-center md:text-left pl-10 ">
             <div className="flex flex-col items-center md:flex-row gap-4">
               <FaWhatsapp className="text-4xl md:text-5xl text-green-500" />
-              <div>
-                <h3 className="font-semibold text-xl">WhatsApp</h3>
+              <div className='pb-8'>
+                <h3 className="font-semibold text-2xl">WhatsApp</h3>
                 <p className="text-gray-600 text-lg">{whatsappNumber}</p>
               </div>
             </div>
 
-            <div className="flex flex-col items-center md:flex-row gap-4">
+            <div className="flex flex-col items-center md:flex-row gap-4 pb-8">
               <MdPhone className="text-4xl md:text-5xl text-gray-700" />
               <div>
-                <h3 className="font-semibold text-xl">Phone</h3>
+                <h3 className="font-semibold text-2xl">Phone</h3>
                 <p className="text-gray-600 text-lg">{whatsappNumber}</p>
               </div>
             </div>
@@ -60,7 +60,7 @@ const Contact = () => {
             <div className="flex flex-col items-center md:flex-row gap-4">
               <MdLocationOn className="text-4xl md:text-5xl text-gray-700" />
               <div>
-                <h3 className="font-semibold text-xl">Location</h3>
+                <h3 className="font-semibold text-2xl">Location</h3>
                 <p className="text-gray-600 text-lg">Ghana</p>
               </div>
             </div>
