@@ -8,13 +8,13 @@ const AboutProduct = () => {
     <section id="products" className="py-16 bg-gray-900 text-[#F5DEB3]">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         
-        <h2 className="text-6xl md:text-4xl font-bold text-center mb-10 pb-20">About Products</h2>
+        <h2 className="text-6xl md:text-5xl font-bold text-center mb-10 pb-20">About Products</h2>
 
         {/* Responsive Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+        <div className="flex flex-wrap justify-center gap-8 text-center">
           
           {/* Product 1 */}
-          <div className="p-4">
+          <div className="flex flex-col items-center p-4 max-w-sm">
             <img 
               src={image1} 
               alt="Eco-Friendly Materials" 
@@ -27,7 +27,7 @@ const AboutProduct = () => {
           </div>
 
           {/* Product 2 */}
-          <div className="p-4">
+          <div className="flex flex-col items-center p-4 max-w-sm">
             <img 
               src={image2} 
               alt="Sustainable Design" 
@@ -40,7 +40,7 @@ const AboutProduct = () => {
           </div>
 
           {/* Product 3 */}
-          <div className="p-4">
+          <div className="flex flex-col items-center p-4 max-w-sm">
             <img 
               src={image3} 
               alt="Local Craftsmanship" 

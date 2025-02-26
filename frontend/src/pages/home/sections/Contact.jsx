@@ -32,15 +32,17 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-12 bg-gray-100">
-      <div className="container mx-auto px-6 md:px-12 lg:px-16">
+    <section id="contact" className="py-16 bg-gray-100 flex justify-center">
+      <div className="container max-w-5xl mx-auto px-6 md:px-12 lg:px-16 flex flex-col items-center">
+        
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 pb-10">
+          Get in Touch
+        </h2>
 
-        <h2 className="text-6xl md:text-4xl font-bold text-center mb-10 pb-20">Get in Touch</h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center w-full">
 
           {/* Contact Info */}
-          <div className="space-y-6 text-center md:text-left pl-10 ">
+          <div className="space-y-8 text-center md:text-left mx-auto">
             <div className="flex flex-col items-center md:flex-row gap-4">
               <FaWhatsapp className="text-4xl md:text-5xl text-green-500" />
               <div className='pb-8'>
@@ -68,7 +70,9 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg w-full max-w-md mx-auto">
-            <h3 className="text-xl md:text-2xl font-semibold mb-4 text-center">Send Us a Message</h3>
+            <h3 className="text-xl md:text-2xl font-semibold mb-4 text-center">
+              Send Us a Message
+            </h3>
             <form className="space-y-4" onSubmit={sendToWhatsApp}>
               <input
                 type="text"
