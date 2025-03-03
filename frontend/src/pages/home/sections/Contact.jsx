@@ -58,7 +58,6 @@ const Contact = () => {
               title="Email"
               value="gyabsfootwear@gmail.com"
               link="mailto:gyabsfootwear@gmail.com"
-              className=''
             />
             <ContactItem
               icon={MdPhone}
@@ -70,7 +69,7 @@ const Contact = () => {
               icon={MdLocationOn}
               title="Location"
               value="Sefwi Bodi, Western North, Ghana"
-              link="https://www.google.com/maps/place/Sefwi+Bodi,+Western+North,+Ghana"
+              link="https://maps.app.goo.gl/eqDD39gZRzrjHbp6A"
             />
           </div>
 

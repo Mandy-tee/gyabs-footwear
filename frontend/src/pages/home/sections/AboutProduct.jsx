@@ -9,8 +9,8 @@ const AboutProduct = () => {
     <section id="products" className="py-16 bg-gray-900 text-[#F5DEB3] flex justify-center">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 text-center">
         
-        <h2 className="text-6xl md:text-5xl font-bold mb-16 pb-20">
-          About Products
+        <h2 className="text-6xl md:text-6xl font-bold mb-16 pb-20">
+          Footwear
         </h2>
 
         {/* Responsive Product Grid */}

@@ -24,7 +24,7 @@ const Footer = () => {
 
           {/* TikTok Icon */}
           <a 
-            href="https://www.tiktok.com/@gyabsfootwear" 
+            href="https://www.tiktok.com/@user3479602945304?is_from_webapp=1&sender_device=pc" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-[#F5DEB3] hover:text-gray-400 transition duration-300 text-3xl"

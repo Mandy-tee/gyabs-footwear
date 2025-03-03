@@ -58,6 +58,7 @@ const Navbar = () => {
             {["Home", "Products", "About", "Works", "Contact", "Shop Now"].map((name, i) => (
               <a
                 key={i}
+                onClick={() => { setIsMenuOpen(false) }}
                 href={`#${i == 0 ? '' : name.toLowerCase().replace(" ", "-")}`}
                 className="hover:text-gray-300 transition-all text-[#F5DEB3]"
               >
