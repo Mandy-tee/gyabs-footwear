@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
-import logo from "/src/assets/logo.jpg";
+import logo from '../assets/logo.jpg'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

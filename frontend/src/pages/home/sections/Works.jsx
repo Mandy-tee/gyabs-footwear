@@ -10,7 +10,7 @@ const Works = () => {
       <div className="container max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
         
         <h2 className="text-5xl md:text-6xl font-bold text-center mb-12 pb-16">
-          Works
+          Our Process
         </h2>
 
         {/* 2x2 Grid Layout */}
